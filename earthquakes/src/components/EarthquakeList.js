@@ -14,7 +14,7 @@ class EarthquakeList extends Component {
             <h6 className="card-subtitle mb-2 text-muted">Time: {moment(earthquake.properties.time).format('llll')}</h6>
             <p className="card-text">Coordinates: {earthquake.geometry.coordinates}</p>
 
-            <a href={earthquake.url} className="card-link">USGS Event Link</a>
+            <a href={earthquake.properties.url} className="card-link">USGS Event Link</a>
 
           </div>
         </div>
